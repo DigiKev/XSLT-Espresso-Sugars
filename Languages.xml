@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings>
+
+	<language id="espresso.default.XSLT">
+		
+		<!-- The root zone name for this language. This can be defined in one of the syntax definitions under Syntaxes, or in another bundle. -->
+		<root-zone>text.xml.xslt</root-zone>
+		
+		<!-- The name of the language as presented to the user -->
+		<name>XSLT</name>
+		
+		<!-- Ways to detect if a certain file is in this language -->
+		<detectors>
+			<extension>xslt</extension>
+		</detectors>
+		
+	</language>
+		
+</settings>
