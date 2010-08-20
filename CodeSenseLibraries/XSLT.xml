@@ -26,9 +26,9 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		</completion>
 	</set>
 	
-<!--	<set name="com.macrabbit.xslt.tags">
+	<set name="com.digikev.xslt.tags">
 	
-		<!-- Default behavior --*>
+		<!-- Default behavior -->
 		<behavior>
 			<append-dynamic>
 				<matched-suffix>(\s*:)|[^:]</matched-suffix>
@@ -73,6 +73,6 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 			</behavior>
 		</completion>
 		
-	</set>-->
+	</set>
 	
 </codesense>

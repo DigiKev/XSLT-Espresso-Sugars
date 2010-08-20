@@ -7,77 +7,77 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 <codesense version="1.0">
 	
 	<!-- xsl:message -->
-	<set name="com.digikev.xml.xslt.tag.xsl:message.attribute-values.terminate">
+	<set name="com.digikev.xslt.tag.xsl:message.attribute-values.terminate">
 		<completion string="yes" />
 		<completion string="no" />
 	</set>
 	
 	<!-- xsl:number -->
-	<set name="com.digikev.xml.xslt.tag.xsl:number.attribute-values.level">
+	<set name="com.digikev.xslt.tag.xsl:number.attribute-values.level">
 		<completion string="single" />
 		<completion string="multiple" />
 		<completion string="any" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:number.attribute-values.letter-value">
+	<set name="com.digikev.xslt.tag.xsl:number.attribute-values.letter-value">
 		<completion string="alphabetic" />
 		<completion string="traditional" />
 	</set>
 	
 	<!-- xsl:output -->
-	<set name="com.digikev.xml.xslt.tag.xsl:output.attribute-values.method">
+	<set name="com.digikev.xslt.tag.xsl:output.attribute-values.method">
 		<completion string="xml" />
 		<completion string="html" />
 		<completion string="text" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:output.attribute-values.omit-xml-declaration">
+	<set name="com.digikev.xslt.tag.xsl:output.attribute-values.omit-xml-declaration">
 		<completion string="yes" />
 		<completion string="no" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:output.attribute-values.standalone">
+	<set name="com.digikev.xslt.tag.xsl:output.attribute-values.standalone">
 		<completion string="yes" />
 		<completion string="no" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:output.attribute-values.indent">
+	<set name="com.digikev.xslt.tag.xsl:output.attribute-values.indent">
 		<completion string="yes" />
 		<completion string="no" />
 	</set>
 	
 	<!-- xsl:sort -->
-	<set name="com.digikev.xml.xslt.tag.xsl:sort.attribute-values.data-type">
+	<set name="com.digikev.xslt.tag.xsl:sort.attribute-values.data-type">
 		<completion string="text" />
 		<completion string="number" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:sort.attribute-values.order">
+	<set name="com.digikev.xslt.tag.xsl:sort.attribute-values.order">
 		<completion string="ascending" />
 		<completion string="descending" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:sort.attribute-values.case-order">
+	<set name="com.digikev.xslt.tag.xsl:sort.attribute-values.case-order">
 		<completion string="upper-first" />
 		<completion string="lower-first" />
 	</set>
 	
 	<!-- xsl:value-of -->
-	<set name="com.digikev.xml.xslt.tag.xsl:value-of.attribute-values.disable-output-escaping">
+	<set name="com.digikev.xslt.tag.xsl:value-of.attribute-values.disable-output-escaping">
 		<completion string="yes" />
 		<completion string="no" />
 	</set>
 	
 	<!-- -->
-	<set name="com.digikev.xml.xslt.tag.xsl:stylesheet.attribute-values.version">
+	<set name="com.digikev.xslt.tag.xsl:stylesheet.attribute-values.version">
 		<completion string="1.0" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:stylesheet.attribute-values.xmlns:xsl">
+	<set name="com.digikev.xslt.tag.xsl:stylesheet.attribute-values.xmlns:xsl">
 		<completion string="http://www.w3.org/1999/XSL/Transform" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:output.attribute-values.version">
+	<set name="com.digikev.xslt.tag.xsl:output.attribute-values.version">
 		<completion string="1.0" />
 	</set>
 	

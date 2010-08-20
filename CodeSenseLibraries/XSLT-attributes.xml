@@ -13,33 +13,33 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		</append-dynamic>
 	</behavior>
 		
-	<set name="com.digikev.xml.xslt.tag.xsl:apply-templates.attributes">
+	<set name="com.digikev.xslt.tag.xsl:apply-templates.attributes">
 		<completion string="select" />
 		<completion string="mode" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:attribute.attributes">
+	<set name="com.digikev.xslt.tag.xsl:attribute.attributes">
 		<completion string="name" />
 		<completion string="namespace" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:attribute-set.attributes">
+	<set name="com.digikev.xslt.tag.xsl:attribute-set.attributes">
 		<completion string="name" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:call-template.attributes">
+	<set name="com.digikev.xslt.tag.xsl:call-template.attributes">
 		<completion string="name" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:copy.attributes">
+	<set name="com.digikev.xslt.tag.xsl:copy.attributes">
 		<completion string="use-attribute-sets" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:copy-of.attributes">
+	<set name="com.digikev.xslt.tag.xsl:copy-of.attributes">
 		<completion string="select" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:decimal-format.attributes">
+	<set name="com.digikev.xslt.tag.xsl:decimal-format.attributes">
 		<completion string="name" />
 		<completion string="decimal-separator" />
 		<completion string="grouping-separator" />
@@ -53,44 +53,44 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="pattern-separator" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:element.attributes">
+	<set name="com.digikev.xslt.tag.xsl:element.attributes">
 		<completion string="name" />
 		<completion string="name-space" />
 		<completion string="use-attribute-sets" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:for-each.attributes">
+	<set name="com.digikev.xslt.tag.xsl:for-each.attributes">
 		<completion string="select" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:if.attributes">
+	<set name="com.digikev.xslt.tag.xsl:if.attributes">
 		<completion string="test" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:import.attributes">
+	<set name="com.digikev.xslt.tag.xsl:import.attributes">
 		<completion string="href" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:include.attributes">
+	<set name="com.digikev.xslt.tag.xsl:include.attributes">
 		<completion string="href" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:key.attributes">
+	<set name="com.digikev.xslt.tag.xsl:key.attributes">
 		<completion string="name" />
 		<completion string="match" />
 		<completion string="use" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:message.attributes">
+	<set name="com.digikev.xslt.tag.xsl:message.attributes">
 		<completion string="terminate" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:namespace-alias.attributes">
+	<set name="com.digikev.xslt.tag.xsl:namespace-alias.attributes">
 		<completion string="stylesheet-prefix" />
 		<completion string="result-prefix" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:number.attributes">
+	<set name="com.digikev.xslt.tag.xsl:number.attributes">
 		<completion string="level" />
 		<completion string="count" />
 		<completion string="from" />
@@ -102,7 +102,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="grouping-size" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:output.attributes">
+	<set name="com.digikev.xslt.tag.xsl:output.attributes">
 		<completion string="method" />
 		<completion string="version" />
 		<completion string="encoding" />
@@ -115,20 +115,20 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="media-type" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:param.attributes">
+	<set name="com.digikev.xslt.tag.xsl:param.attributes">
 		<completion string="name" />
 		<completion string="select" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:preserve-space.attributes">
+	<set name="com.digikev.xslt.tag.xsl:preserve-space.attributes">
 		<completion string="elements" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:processing-instruction.attributes">
+	<set name="com.digikev.xslt.tag.xsl:processing-instruction.attributes">
 		<completion string="name" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:sort.attributes">
+	<set name="com.digikev.xslt.tag.xsl:sort.attributes">
 		<completion string="select" />
 		<completion string="lang" />
 		<completion string="data-type" />
@@ -136,11 +136,11 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="case-order" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:strip-space.attributes">
+	<set name="com.digikev.xslt.tag.xsl:strip-space.attributes">
 		<completion string="elements" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:stylesheet.attributes">
+	<set name="com.digikev.xslt.tag.xsl:stylesheet.attributes">
 		<completion string="id" />
 		<completion string="extension-element-prefixes" />
 		<completion string="exclude-result-prefixes" />
@@ -148,39 +148,39 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="xmlns:xsl" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:template.attributes">
+	<set name="com.digikev.xslt.tag.xsl:template.attributes">
 		<completion string="match" />
 		<completion string="name" />
 		<completion string="priority" />
 		<completion string="mode" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:text.attributes">
+	<set name="com.digikev.xslt.tag.xsl:text.attributes">
 		<completion string="disable-output-escaping" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:transform.attributes">
+	<set name="com.digikev.xslt.tag.xsl:transform.attributes">
 		<completion string="id" />
 		<completion string="extension-element-prefixes" />
 		<completion string="exclude-result-prefixes" />
 		<completion string="version" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:value-of.attributes">
+	<set name="com.digikev.xslt.tag.xsl:value-of.attributes">
 		<completion string="select" />
 		<completion string="disable-output-escaping" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:variable.attributes">
+	<set name="com.digikev.xslt.tag.xsl:variable.attributes">
 		<completion string="name" />
 		<completion string="select" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:when.attributes">
+	<set name="com.digikev.xslt.tag.xsl:when.attributes">
 		<completion string="test" />
 	</set>
 	
-	<set name="com.digikev.xml.xslt.tag.xsl:with-param.attributes">
+	<set name="com.digikev.xslt.tag.xsl:with-param.attributes">
 		<completion string="name" />
 		<completion string="select" />
 	</set>
