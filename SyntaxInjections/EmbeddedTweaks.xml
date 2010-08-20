@@ -2,11 +2,11 @@
 
 <injections>
 
-	<injection name="injections.text.xslt.cssfix" selector="embedded-style.xslt *" action="insert-before-children">
+	<injection name="injections.source.xslt.cssfix" selector="embedded-style.xslt *" action="insert-before-children">
 		<cut-off>&lt;/style></cut-off>
 	</injection>
 
-	<injection name="injections.text.xslt.style-attribute" selector="tag.open.xslt" action="insert-before-children">
+	<injection name="injections.source.xslt.style-attribute" selector="tag.open.xslt" action="insert-before-children">
 	
 		<zone>
 			<expression>\b(style)=((")([^"]*)("))</expression>
@@ -36,11 +36,11 @@
 		
 	</injection>
 
-	<injection name="injections.text.xslt.jsfix" selector="embedded-javascript.xslt *" action="insert-before-children">
+	<injection name="injections.source.xslt.jsfix" selector="embedded-javascript.xslt *" action="insert-before-children">
 		<cut-off>&lt;/script></cut-off>
 	</injection>
 	
-	<injection name="injections.text.xslt.js-attribute" selector="tag.open.xslt" action="insert-before-children">
+	<injection name="injections.source.xslt.js-attribute" selector="tag.open.xslt" action="insert-before-children">
 	
 		<zone>
 			<expression>\b(onfocus|onblur|onclick|ondblclick|onmousedown|onmouseup|onmouseover|onmousemove|onmouseout|onkeypress|onkeydown|onkeyup)=((")([^"]*)("))</expression>
