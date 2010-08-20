@@ -6,7 +6,6 @@ CodeSense Providers map contexts in a document to possible completions. The actu
 -->
 <codesense>
 	
-	<!-- -->
 	<provider>
 		<selector>sourcecode.xslt - *, tag.open.xslt</selector>
 		<completions>com.digikev.xslt.builtins.templates</completions>

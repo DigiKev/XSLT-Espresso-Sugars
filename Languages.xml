@@ -2,24 +2,27 @@
 
 <settings>
 	<language id="com.digikev.XML.XSLT">
+		
 		<name>XSLT</name>
 		<root-zone>source.xml.xslt</root-zone>
 		<detectors>
 			<extension casesensitive="false">xslt</extension>
 		</detectors>
+		
+		<meta>
+			<name>XSLT</name>
+			<description>Fully describes the XSL Transformations language</description>
+			<author>Kevin Rapley</author>
+			<identifier>com.digikev.XML.XSLT</identifier>
+			<version status="preview">1.0</version>
+			<download format="git">git://github.com/DigiKev/XSLT-Espresso-Sugars.git</download>
+			<url>http://github.com/DigiKev/XSLT-Espresso-Sugars</url>
+			<dependencies>
+				<dependency id="espresso.default.XML">XML</dependency>
+				<dependency id="espresso.default.HTML">HTML</dependency>
+			</dependencies>	
+		</meta>
+		
 	</language>
 	
-	<meta>
-		<name>XSLT</name>
-		<description>Fully describes the XSL Transformations language</description>
-		<author>Kevin Rapley</author>
-		<identifier>com.digikev.XML.XSLT</identifier>
-		<version status="preview">0.0a1</version>
-		<download format="git">git://github.com/DigiKev/XSLT-Espresso-Sugars.git</download>
-		<url>http://github.com/DigiKev/XSLT-Espresso-Sugars</url>
-		<dependencies>
-			<dependency id="espresso.default.XML">XML</dependency>
-			<dependency id="espresso.default.HTML">HTML</dependency>
-		</dependencies>	
-	</meta>
 </settings>

@@ -65,4 +65,15 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		
 	</set>
 	
+	<set name="com.digikev.xslt.tags.self-closing">
+		
+		<behavior>
+			<append-static> /></append-static>
+		</behavior>
+		
+		<completion string="xsl:jibble" />
+		<completion string="xsl:flibble" />
+		
+	</set>
+	
 </codesense>
