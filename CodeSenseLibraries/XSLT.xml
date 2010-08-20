@@ -15,7 +15,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 			<confirm-partial characters="<xsl" />
 		</behavior>
 		
-		<completion string="<xsl:apply-templates">
+		<completion string="xsl:apply-templates">
 			<behavior>
 				<append-dynamic>
 					<matched-suffix>(\s*:)|[^:]</matched-suffix>
@@ -35,16 +35,6 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 				<transform-into>(?1::>$0&lt;/${completion}>)</transform-into>
 			</append-dynamic>
 		</behavior>
-		
-		
-		<completion string="xsl:apply-templates">
-			<behavior>
-				<append-dynamic>
-					<matched-suffix>(\s*:)|[^:]</matched-suffix>
-					<transform-into>(?1:: select="$1">${2}&lt;/xsl:apply-templates>$0)</transform-into>
-				</append-dynamic>
-			</behavior>
-		</completion>
 		
 		<completion string="xsl:attribute">
 			<behavior>
@@ -68,7 +58,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 			<behavior>
 				<append-dynamic>
 					<matched-suffix>(\s*:)|[^:]</matched-suffix>
-					<transform-into>(?1:: name="$1" ${2}&lt;/xsl:attribute-set>$0)</transform-into>
+					<transform-into>(?1:: name="$1" ${2}&lt;/xsl:call-template>$0)</transform-into>
 				</append-dynamic>
 			</behavior>
 		</completion>
