@@ -16,9 +16,9 @@ CodeSense Providers map contexts in a document to possible completions. The actu
 	
 	<!-- XSLT tags -->
 	<provider>
-		<selector>sourcecode.xslt - *, tag.open.xslt<!--, tag.self-closing.xslt--></selector>
+		<selector>sourcecode.xslt - *, tag.open.xslt, tag.self-closing.xslt</selector>
 		<completions>com.digikev.xslt.tags</completions>
-		<!--<completions>com.digikev.xslt.tags.self-closing</completions>-->
+		<completions>com.digikev.xslt.tags.self-closing</completions>
 		<complete-match capture="2">(&lt;)([a-zA-Z0-9-]*)</complete-match>
 		<require-suffix>(\s|>|^)</require-suffix>
 	</provider>
