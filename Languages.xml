@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <settings>
-
-	<language id="espresso.default.XSLT">
-		
-		<!-- The root zone name for this language. This can be defined in one of the syntax definitions under Syntaxes, or in another bundle. -->
-		<root-zone>text.xml.xslt</root-zone>
-		
-		<!-- The name of the language as presented to the user -->
+	<language id="com.digikev.XML.XSLT">
 		<name>XSLT</name>
-		
-		<!-- Ways to detect if a certain file is in this language -->
+		<root-zone>source.xml.xslt</root-zone>
 		<detectors>
-			<extension>xslt</extension>
+			<extension casesensitive="false">xslt</extension>
 		</detectors>
-		
 	</language>
-		
+	
+	<meta>
+		<name>XSLT</name>
+		<description>Fully describes the XSL Transformations language</description>
+		<author>Kevin Rapley</author>
+		<identifier>com.digikev.XML.XSLT</identifier>
+		<version status="preview">0.0a1</version>
+		<download format="git">git://github.com/DigiKev/XSLT-Espresso-Sugars.git</download>
+		<url>http://github.com/DigiKev/XSLT-Espresso-Sugars</url>
+		<dependencies>
+			<dependency id="espresso.default.XML">XML</dependency>
+			<dependency id="espresso.default.HTML">HTML</dependency>
+		</dependencies>	
+	</meta>
 </settings>

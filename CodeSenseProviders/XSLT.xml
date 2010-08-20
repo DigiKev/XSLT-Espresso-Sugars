@@ -6,19 +6,27 @@ CodeSense Providers map contexts in a document to possible completions. The actu
 -->
 <codesense>
 	
+	<!-- -->
+	<provider>
+		<selector>sourcecode.xslt - *, tag.open.xslt</selector>
+		<completions>com.digikev.xslt.builtins.templates</completions>
+		<complete-match capture="2">(&lt;)([a-zA-Z0-9-]*)</complete-match>
+		<require-suffix>(\s|>|^)</require-suffix>
+	</provider>
+	
 	<!-- XSLT tags -->
 	<provider>
-		<selector>text.xslt - *, tag.open.xslt<!--, tag.self-closing.xslt--></selector>
-		<completions>com.macrabbit.xslt.tags</completions>
-		<!--<completions>com.macrabbit.xslt.tags.self-closing</completions>-->
+		<selector>sourcecode.xslt - *, tag.open.xslt<!--, tag.self-closing.xslt--></selector>
+		<completions>com.digikev.xml.xslt.tags</completions>
+		<!--<completions>com.digikev.xml.xslt.tags.self-closing</completions>-->
 		<complete-match capture="2">(&lt;)([a-zA-Z0-9-]*)</complete-match>
 		<require-suffix>(\s|>|^)</require-suffix>
 	</provider>
 	
 	<!-- XSLT attributes -->
 	<provider>
-		<selector>tag.open.xslt:has-child(name:capture(tag)) > attribute-name, tag.open.xslt:has-child(name:capture(tag)) > punctuation.definition.end, tag.open.xslt:has-child(name:capture(tag))</selector>
-		<completions>com.macrabbit.xslt.tag.${tag}.attributes</completions>
+		<selector>tag.open.xml:has-child(name:capture(tag)) > attribute-name, tag.open.xml:has-child(name:capture(tag)) > punctuation.definition.end, tag.open.xml:has-child(name:capture(tag))</selector>
+		<completions>com.macrabbit.xml.tag.${tag}.attributes</completions>
 		<complete-match capture="2">(\s)([a-zA-Z0-9-]*)</complete-match>
 		<require-suffix>(\s|=|>|^)</require-suffix>
 	</provider>
@@ -26,7 +34,7 @@ CodeSense Providers map contexts in a document to possible completions. The actu
 	<!-- XSLT attribute values -->
 	<provider>
 		<selector>tag.open.xslt:has-child(name:capture(tag)) > attribute-name:capture(attribute) + string > punctuation.end</selector>
-		<completions>com.macrabbit.xslt.tag.${tag}.attribute-values.${attribute}</completions>
+		<completions>com.digikev.xml.xslt.tag.${tag}.attribute-values.${attribute}</completions>
 		<complete-match capture="2">("|'|)([a-zA-Z0-9-]*)</complete-match>
 		<!--require-suffix>(\s|>|^)</require-suffix-->
 	</provider>

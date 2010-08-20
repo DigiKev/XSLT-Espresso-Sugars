@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<syntax name="text.xslt">
+<syntax name="sourcecode.xslt">
     <zones>
         <zone name="comment.block.xslt">
             <starts-with>
@@ -11,16 +11,16 @@
                 <capture number="0" name="punctuation.definition.end"/>
             </ends-with>
         </zone>
-		<zone name="comment.cdata.xslt">
-			<starts-with>
-				<expression>&lt;!\[CDATA\[</expression>
-				<capture number="0" name="punctuation.definition.begin"/>
-			</starts-with>
-			<ends-with>
-				<expression>\]\]></expression>
-				<capture number="0" name="punctuation.definition.end"/>
-			</ends-with>
-		</zone>
+				<zone name="comment.cdata.xslt">
+					<starts-with>
+						<expression>&lt;!\[CDATA\[</expression>
+						<capture number="0" name="punctuation.definition.begin"/>
+					</starts-with>
+					<ends-with>
+						<expression>\]\]></expression>
+						<capture number="0" name="punctuation.definition.end"/>
+					</ends-with>
+				</zone>
         <zone name="tag.self-closing.processing-instruction.xslt">
             <starts-with>
                 <expression>(&lt;\?)([a-zA-Z0-9_-]+)</expression>
@@ -117,7 +117,7 @@
                     <expression>"</expression>
                     <capture number="0" name="punctuation.definition.end"/>
                 </ends-with>
-				<subzones name="attribute-value.value" />
+								<subzones name="attribute-value.value" />
             </zone>
             <zone name="attribute-value.string.quoted.single">
                 <starts-with>
@@ -128,7 +128,7 @@
                     <expression>'</expression>
                     <capture number="0" name="punctuation.definition.end"/>
                 </ends-with>
-				<subzones name="attribute-value.value" />
+								<subzones name="attribute-value.value" />
             </zone>
         </collection>
 		

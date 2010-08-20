@@ -6,9 +6,29 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 -->
 <codesense version="1.0">
 	
-	<set name="com.macrabbit.xslt.tags">
+	<set name="com.digikev.xslt.builtins.templates">
+		<behavior>
+			<append-dynamic>
+				<matched-suffix>(\s*:)|[^:]</matched-suffix>
+				<transform-into>(?1::>$0&lt;/${completion}>)</transform-into>
+			</append-dynamic>
+			<confirm-partial characters="<xsl" />
+		</behavior>
+		
+		<completion string="<xsl:apply-templates">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1:: select="$1">${2}&lt;/xsl:apply-templates>$0)</transform-into>
+				</append-dynamic>
+				<confirm-partial characters="<xsl" />
+			</behavior>
+		</completion>
+	</set>
 	
-		<!-- Default behavior -->
+<!--	<set name="com.macrabbit.xslt.tags">
+	
+		<!-- Default behavior --*>
 		<behavior>
 			<append-dynamic>
 				<matched-suffix>(\s*:)|[^:]</matched-suffix>
@@ -53,6 +73,6 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 			</behavior>
 		</completion>
 		
-	</set>
+	</set>-->
 	
 </codesense>
