@@ -6,7 +6,10 @@
 		<name>XSLT</name>
 		<root-zone>source.xml.xslt</root-zone>
 		<detectors>
-			<extension casesensitive="false">xslt</extension>
+			<combo>
+				<extension>xslt</extension>
+				<match-content><![CDATA[<\?xml]]></match-content>
+			</combo>
 		</detectors>
 		
 		<meta>
